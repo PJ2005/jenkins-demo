@@ -35,7 +35,7 @@ pipeline {
                         git config user.email "jenkins@buildagent.local"
                         git add .
                         git commit -m "Chore: Automated removal of Python files [skip ci]" || echo "No changes to commit"
-                        git push https://${GIT_USERNAME}:${GIT_PASSWORD}@://github.com/PJ2005/jenkins-demo HEAD:main
+                        git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/PJ2005/jenkins-demo HEAD:main
                     '''
                 }
             }
